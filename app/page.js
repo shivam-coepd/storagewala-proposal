@@ -4,29 +4,24 @@ import { useState, useEffect } from 'react';
 
 const referenceLinks = [
   {
-    name: "Laravel TransHub",
+    name: "Demo 1",
     url: "https://laravel-transhub.mnsithub.com/",
-    description: "Professional transportation & logistics template"
   },
   {
-    name: "OnPoint PHP Template",
+    name: "Demo 2",
     url: "https://themehealer.com/php-template/onpoint-php/index.php",
-    description: "Modern business and service website template"
   },
   {
-    name: "TransPro Home",
+    name: "Demo 3",
     url: "https://www.wowtheme7.com/tf/transpro/home.html",
-    description: "Transportation and logistics homepage design"
   },
   {
-    name: "TransLo Index 2",
+    name: "Demo 4",
     url: "https://html.favdevs.com/translo/index-2.html",
-    description: "Logistics and shipping website template"
   },
   {
-    name: "TransLo Index 3",
+    name: "Demo 5",
     url: "https://html.favdevs.com/translo/index-3.html",
-    description: "Transportation services website design"
   }
 ];
 
@@ -584,11 +579,10 @@ export default function Home() {
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="space-y-4">
                 {[
-                  { service: 'Online recurring subscription / auto-debit setup', fee: 'From ₹20,000' },
-                  { service: 'WhatsApp Business API notifications', fee: 'From ₹15,000 setup + provider usage charges' },
-                  { service: 'SMS OTP / transactional SMS', fee: 'From ₹8,000 setup + message charges' },
+                  { service: 'WhatsApp Business API notifications', fee: 'From ₹12,000 setup + provider usage charges' },
+                  { service: 'SMS OTP / transactional SMS', fee: 'From ₹5,000 setup + message charges' },
                   { service: 'Advanced CRM or ERP integration', fee: 'Quoted after API review' },
-                  { service: 'Ongoing maintenance and support', fee: '₹8,000/month or ₹75,000/year' },
+                  { service: 'Ongoing maintenance and support', fee: '₹4,000/month or ₹45,000/year' },
                   { service: 'SEO and content growth programme', fee: 'Quoted separately based on target cities and keywords' },
                 ].map((item, index) => (
                   <div key={index} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
@@ -734,7 +728,6 @@ export default function Home() {
                 <h3 className="font-bold text-[#1e3a5f] mb-2 group-hover:text-[#d4a843] transition-colors">
                   {link.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">{link.description}</p>
                 <div className="flex items-center text-xs text-gray-500">
                   <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
@@ -747,49 +740,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Acceptance Section */}
-      <section id="acceptance" className="py-20 px-4 bg-gray-50">
+      {/* Important Notes Section */}
+      <section className="py-12 px-4 bg-[#1e3a5f]">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1e3a5f] mb-4">Acceptance</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#d4a843] to-[#d4a843]/50 mx-auto"></div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-xl font-bold text-[#1e3a5f] mb-6">For StorageWala</h3>
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-gray-600 text-sm mb-2">Name</label>
-                  <div className="border-b-2 border-gray-300 h-8"></div>
-                </div>
-                <div>
-                  <label className="block text-gray-600 text-sm mb-2">Signature</label>
-                  <div className="border-b-2 border-gray-300 h-8"></div>
-                </div>
-                <div>
-                  <label className="block text-gray-600 text-sm mb-2">Date</label>
-                  <div className="border-b-2 border-gray-300 h-8"></div>
-                </div>
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Important Notes</h3>
+          <div className="space-y-4">
+            <div className="flex items-start bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="w-8 h-8 bg-[#d4a843] rounded-full flex items-center justify-center text-[#0f1924] font-bold text-sm mr-4 flex-shrink-0">
+                1
               </div>
+              <p className="text-white text-lg">
+                This Proposal is <span className="font-bold text-[#d4a843]">For a Single Branch</span>
+              </p>
             </div>
-
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-xl font-bold text-[#1e3a5f] mb-6">For APT Digital Express</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <span className="text-gray-700 font-medium mr-3">Nilesh G.</span>
-                </div>
-                <div className="text-sm text-gray-500 mb-2">Digital Transformation Manager</div>
-                <div>
-                  <label className="block text-gray-600 text-sm mb-2">Signature</label>
-                  <div className="border-b-2 border-gray-300 h-8"></div>
-                </div>
-                <div>
-                  <label className="block text-gray-600 text-sm mb-2">Date</label>
-                  <div className="border-b-2 border-gray-300 h-8"></div>
-                </div>
+            <div className="flex items-start bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="w-8 h-8 bg-[#d4a843] rounded-full flex items-center justify-center text-[#0f1924] font-bold text-sm mr-4 flex-shrink-0">
+                2
               </div>
+              <p className="text-white text-lg">
+                Domain and hosting cost will be taken care by the <span className="font-bold text-[#d4a843]">Client</span>
+              </p>
+            </div>
+            <div className="flex items-start bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="w-8 h-8 bg-[#d4a843] rounded-full flex items-center justify-center text-[#0f1924] font-bold text-sm mr-4 flex-shrink-0">
+                3
+              </div>
+              <p className="text-white text-lg">
+                The Above Proposal is valid for <span className="font-bold text-[#d4a843]">3 working days</span> from date of generation
+              </p>
             </div>
           </div>
         </div>
