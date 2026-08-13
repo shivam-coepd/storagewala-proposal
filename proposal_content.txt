@@ -1,0 +1,516 @@
+APT DIGITAL EXPRESS
+---
+Website Redesign &
+Online Booking Proposal
+---
+STORAGEWALA.COM
+---
+A conversion-focused digital platform for discovering storage plans, calculating transparent pricing, booking pickup, and paying securely online.
+---
+Prepared for
+---
+Prepared by
+---
+StorageWala
+---
+APT Digital Express
+---
+Website: storagewala.com
+---
+Nilesh G. • Digital Transformation Manager
+---
+Project: Website redesign + payment gateway
+---
+Date: 13 August 2026
+---
+WE OPTIMIZE. WE ENGAGE. WE GROW.
+---
+1. Executive Summary
+---
+StorageWala has strong service breadth across household storage, business storage, vehicle storage, packing and moving, and fulfilment. The redesign should convert this breadth into a simple digital buying experience—making pricing easier to understand, building trust faster, and enabling customers to complete a booking and payment without unnecessary calls or form friction.
+---
+What we observed on the current website
+---
+Storage packages are published for individual items, 10+ household goods, 1 BHK, 2 BHK, 3 BHK, two-wheelers and custom extra space.
+---
+Discounts, GST, insurance and logistics exclusions are described, but the customer must mentally calculate the payable amount.
+---
+The Book Space page largely repeats homepage content instead of guiding the visitor through a focused checkout journey.
+---
+Customer registration and login exist, while the FAQ states that portal payments support cards, debit cards and net banking; this should be unified into a visible, reliable booking flow.
+---
+Repeated content, inconsistent wording and form labels, and limited conversion hierarchy reduce clarity and confidence.
+---
+Recommended outcome
+---
+Business objective
+---
+Redesign response
+---
+Increase qualified bookings
+---
+Clear packages, sticky “Book Now” CTAs and guided checkout
+---
+Reduce manual quotation effort
+---
+Automated tenure, discount, GST and optional service calculations
+---
+Build customer trust
+---
+Facility photos, security proof, service steps, FAQs and verified testimonials
+---
+Improve payment collection
+---
+Secure gateway, payment status, receipts, retries and admin reconciliation
+---
+Support organic growth
+---
+SEO-friendly service and location architecture with preserved URLs/redirects
+---
+Success measures
+---
+More completed booking requests and successful online payments
+---
+Lower drop-off between package selection and confirmation
+---
+Fewer support calls for pricing, inclusions and payment status
+---
+Improved mobile performance, discoverability and lead tracking
+---
+2. Proposed Website Experience
+---
+The new interface will be mobile-first, fast, reassuring and designed around the two primary audiences: households seeking secure storage and businesses requiring scalable warehousing or fulfilment.
+---
+Recommended sitemap
+---
+Primary pages
+---
+Purpose
+---
+Home
+---
+Value proposition, plan finder, trust proof, service highlights and conversion CTAs
+---
+Household Storage
+---
+Storage categories, packages, safety features and booking entry point
+---
+Business Storage
+---
+Warehouse, inventory, document, retail and fulfilment solutions
+---
+Packers & Movers
+---
+Packing, pickup, transport, unloading and service enquiry
+---
+Vehicle Storage & Transport
+---
+Two-wheeler/car storage, transport options and quote request
+---
+Pricing / Book Space
+---
+Plan comparison, duration, add-ons and real-time payable estimate
+---
+Locations
+---
+City and locality pages with unique, useful SEO content
+---
+How It Works / Safety
+---
+Process, prohibited items, warehouse security and insurance guidance
+---
+About / Testimonials / FAQ / Blog / Contact
+---
+Brand credibility, education and enquiries
+---
+Customer Account
+---
+Bookings, invoices, payments, documents and service requests
+---
+Customer booking journey
+---
+1
+---
+Choose requirement — Select household, business, vehicle or custom storage.
+---
+2
+---
+Configure booking — Choose plan/volume, storage period, pickup city/date and optional services.
+---
+3
+---
+Review transparent estimate — Show base rent, tenure discount, insurance, GST and add-ons before payment.
+---
+4
+---
+Enter customer details — OTP verification, address, item declaration and acceptance of terms.
+---
+5
+---
+Pay securely — Pay full amount, advance amount or booking token according to the approved business rule.
+---
+6
+---
+Receive confirmation — Booking ID, invoice/receipt, email/SMS/WhatsApp acknowledgement and account access.
+---
+Conversion-focused design features
+---
+Persistent Call / WhatsApp / Book Now actions on mobile
+---
+Storage-size guide and “Not sure?” assisted quotation option
+---
+Service-area validation before checkout
+---
+Clear inclusions, exclusions, cancellation and refund information
+---
+Google Analytics 4, Search Console, Meta Pixel and conversion events
+---
+3. Payment Gateway & Booking System
+---
+APT Digital Express will integrate an Indian payment gateway such as Razorpay, Cashfree or PayU. Final selection will depend on StorageWala’s merchant approval, preferred settlement terms and transaction fees.
+---
+Payment functionality
+---
+Feature
+---
+Included capability
+---
+Payment modes
+---
+UPI, cards, net banking and supported wallets
+---
+Pricing engine
+---
+Monthly rate × tenure, approved discounts, GST and configurable add-ons
+---
+Payment choices
+---
+Full payment, advance/token or custom invoice link—subject to final business rule
+---
+Verification
+---
+Server-side signature verification and gateway webhook handling
+---
+Customer proof
+---
+Booking confirmation, payment receipt and downloadable invoice
+---
+Failed payments
+---
+Retry flow with preserved booking details and clear status
+---
+Refund support
+---
+Admin-recorded refund status; automated gateway refund can be added if approved
+---
+Reconciliation
+---
+Transaction ID, booking ID, amount, gateway status and settlement reference
+---
+Notifications
+---
+Email confirmation included; SMS/WhatsApp subject to provider integration and usage fees
+---
+Admin controls
+---
+Dashboard for booking, lead and payment summaries
+---
+Manage plans, monthly prices, discounts, GST rules, service areas and add-ons
+---
+View customer details, pickup requirements and booking history
+---
+Update booking stages: pending, payment received, pickup scheduled, stored, return requested and closed
+---
+Export booking and payment records to CSV/Excel
+---
+Role-based access for authorised operations and finance users
+---
+Security and compliance approach
+---
+HTTPS, secure authentication, validation, protected admin routes and database backups
+---
+No card data stored on the website; payment details remain on the PCI-compliant gateway flow
+---
+Privacy policy, terms, cancellation/refund policy and consent checkboxes presented at checkout
+---
+Audit-friendly transaction records and restricted access to personal data
+---
+Important dependency: StorageWala will complete gateway KYC/merchant onboarding and provide approved policies, bank details, GST information and production API credentials. Gateway transaction charges are paid directly by StorageWala.
+---
+4. Scope, Deliverables & Timeline
+---
+Included deliverables
+---
+Workstream
+---
+Deliverables
+---
+Discovery & UX
+---
+Requirement workshop, user journeys, sitemap and wireframes
+---
+UI design
+---
+Responsive design system and key page mockups aligned with StorageWala branding
+---
+Development
+---
+Responsive front end, CMS-managed content and database-backed booking flow
+---
+Booking engine
+---
+Packages, tenure, discounts, taxes, add-ons, booking IDs and confirmations
+---
+Payment integration
+---
+One approved payment gateway, webhooks, success/failure flows and receipts
+---
+Customer account
+---
+Registration/login, booking history, payment records and basic profile
+---
+Admin panel
+---
+Plans, prices, bookings, customers, payment status, service areas and export
+---
+SEO migration
+---
+Metadata, schema basics, sitemap, robots, URL mapping and priority redirects
+---
+Analytics & QA
+---
+GA4 events, form/payment conversion tracking, responsive and functional testing
+---
+Launch & handover
+---
+Production deployment, admin walkthrough and 30-day defect warranty
+---
+Indicative project plan
+---
+Phase
+---
+Duration
+---
+Output
+---
+1. Discovery & content audit
+---
+3–4 working days
+---
+Approved requirements, sitemap and booking rules
+---
+2. UX/UI design
+---
+7–9 working days
+---
+Wireframes and responsive visual direction
+---
+3. Development & CMS
+---
+12–15 working days
+---
+Website pages and editable content
+---
+4. Booking + gateway
+---
+8–10 working days
+---
+Checkout, payment and admin workflows
+---
+5. QA, migration & launch
+---
+5–7 working days
+---
+Tested production release and training
+---
+Estimated total: 35–45 working days from receipt of content, access, approved booking rules and gateway credentials.
+---
+Client inputs required
+---
+Brand assets, approved copy, original facility/service photographs and testimonials
+---
+Final rate card, discount logic, taxes, insurance calculation and service/add-on charges
+---
+Booking, cancellation, refund, prohibited-items and data-privacy policies
+---
+Domain/hosting access, existing website/database access and payment gateway account
+---
+One authorised stakeholder for consolidated feedback and approvals
+---
+5. Commercial Proposal
+---
+The following is an indicative fixed-project estimate based on the scope described above. The final quotation will be confirmed after a technical review of the existing customer portal, database and admin panel.
+---
+Component
+---
+Professional fee
+---
+UX strategy, sitemap and responsive UI design
+---
+₹25,000
+---
+CMS website development and content migration
+---
+₹45,000
+---
+Booking engine and customer account
+---
+₹35,000
+---
+Payment gateway integration and transaction workflows
+---
+₹20,000
+---
+Admin dashboard, reporting and configuration controls
+---
+₹30,000
+---
+SEO migration, analytics, QA, deployment and training
+---
+₹15,000
+---
+Total project investment
+---
+₹1,70,000 + GST
+---
+Payment schedule
+---
+Milestone
+---
+Amount
+---
+40% advance on project confirmation
+---
+₹68,000 + GST
+---
+30% on approval of UI and booking workflow
+---
+₹51,000 + GST
+---
+20% on staging completion
+---
+₹34,000 + GST
+---
+10% before production launch
+---
+₹17,000 + GST
+---
+Optional services
+---
+Optional item
+---
+Indicative fee
+---
+Online recurring subscription / auto-debit setup
+---
+From ₹20,000
+---
+WhatsApp Business API notifications
+---
+From ₹15,000 setup + provider usage charges
+---
+SMS OTP / transactional SMS
+---
+From ₹8,000 setup + message charges
+---
+Advanced CRM or ERP integration
+---
+Quoted after API review
+---
+Ongoing maintenance and support
+---
+₹8,000/month or ₹75,000/year
+---
+SEO and content growth programme
+---
+Quoted separately based on target cities and keywords
+---
+Commercial notes
+---
+Gateway onboarding, gateway transaction fees, hosting, paid plugins, SMS/WhatsApp usage and third-party subscriptions are excluded unless explicitly listed.
+---
+The estimate includes migration of agreed website content. Large-scale rewriting, photography, video production and bulk historic data cleanup are outside this scope.
+---
+Two consolidated review rounds are included for UI design. Changes to approved workflows may affect cost and schedule.
+---
+30-day post-launch defect warranty is included. New features and content updates are handled under maintenance or change request.
+---
+Proposal validity: 15 days from issue date.
+---
+6. Why APT Digital Express
+---
+APT Digital Express combines website engineering, user-experience design, SEO, analytics and performance marketing. This allows StorageWala to launch a platform that is not only visually modern, but also measurable, searchable and built to convert.
+---
+Our approach
+---
+Value to StorageWala
+---
+Conversion-led design
+---
+Every major page guides visitors toward a quote, booking or payment
+---
+Business-rule clarity
+---
+Pricing, discounts, tax, insurance and extras are configured transparently
+---
+SEO-aware migration
+---
+Existing location visibility is protected while content quality improves
+---
+Measurable funnel
+---
+Track plan views, checkout starts, payment success and lead sources
+---
+Practical handover
+---
+Admin training, documentation and a clear post-launch support path
+---
+Recommended next steps
+---
+1
+---
+Scope confirmation — Approve the proposed modules and identify any existing portal functionality to retain.
+---
+2
+---
+Technical access review — Review hosting, codebase, database, customer accounts and current admin panel.
+---
+3
+---
+Booking-rule workshop — Confirm pricing, discounts, GST, insurance, add-ons, advance payment and refund rules.
+---
+4
+---
+Commercial approval — Sign off the final statement of work and initiate the first milestone payment.
+---
+5
+---
+Project kickoff — Begin sitemap, wireframes and content migration plan.
+---
+Acceptance
+---
+For StorageWala
+---
+For APT Digital Express
+---
+Name: __________________________
+
+Signature: _______________________
+
+Date: ___________________________
+---
+Nilesh G.
+Digital Transformation Manager
+
+Signature: _______________________
+
+Date: ___________________________
+---
+APT DIGITAL EXPRESS
+---
+Data meets creativity — the APT Digital Express way.
+---
+Source reviewed
+---
+StorageWala public website, including Home, Book Space, Customer Registration, Login and FAQ pages, reviewed 13 August 2026. Public URL: https://www.storagewala.com
+---
