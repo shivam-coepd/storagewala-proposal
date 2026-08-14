@@ -76,7 +76,6 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               <img src="/APT_Logo.png" alt="APT Digital Express Logo" className="h-10 w-auto" />
-              <span className="font-bold text-[#1e3a5f] text-lg hidden sm:block">StorageWala Proposal</span>
             </div>
             
             {/* Desktop Nav */}
@@ -515,40 +514,186 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
+      <section id="pricing" className="py-20 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1 bg-[#1e3a5f]/10 text-[#1e3a5f] rounded-full text-sm font-medium mb-4">Section 05</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-4">Commercial Proposal</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-4">Pricing Plans</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#d4a843] to-[#d4a843]/50 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              The following is an indicative fixed-project estimate based on the scope described above. The final quotation will be confirmed after a technical review of the existing customer portal, database and admin panel.
+              Choose the perfect plan for your business needs. All plans include our core features with varying levels of functionality.
             </p>
           </div>
 
-          {/* Main Investment */}
-          <div className="mb-12">
-            <div className="bg-gradient-to-br from-[#1e3a5f] to-[#0f1924] rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-6 text-center">Professional Fee Breakdown</h3>
-              <div className="space-y-4">
-                {[
-                  { component: 'UX strategy, sitemap and responsive UI design', fee: '₹25,000' },
-                  { component: 'CMS website development and content migration', fee: '₹45,000' },
-                  { component: 'Booking engine and customer account', fee: '₹35,000' },
-                  { component: 'Payment gateway integration and transaction workflows', fee: '₹20,000' },
-                  { component: 'Admin dashboard, reporting and configuration controls', fee: '₹30,000' },
-                  { component: 'SEO migration, analytics, QA, deployment and training', fee: '₹15,000' },
-                ].map((item, index) => (
-                  <div key={index} className="flex justify-between items-center py-3 border-b border-white/10 last:border-0">
-                    <span className="text-gray-300">{item.component}</span>
-                    <span className="font-semibold text-[#d4a843]">{item.fee}</span>
-                  </div>
-                ))}
-                <div className="flex justify-between items-center pt-4 mt-4 border-t-2 border-[#d4a843]">
-                  <span className="text-xl font-bold">Total project investment</span>
-                  <span className="text-2xl font-bold text-[#d4a843]">₹1,70,000 + GST</span>
-                </div>
+          {/* Pricing Cards */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* Basic Plan */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div className="bg-gradient-to-r from-gray-600 to-gray-700 p-6 text-white text-center">
+                <h3 className="text-2xl font-bold mb-2">Basic / Starter</h3>
+                <p className="text-gray-200 text-sm">Essential website with inquiry form</p>
               </div>
+              <div className="p-8 flex-grow">
+                <div className="text-center mb-8">
+                  <span className="text-5xl font-bold text-[#1e3a5f]">₹40,000</span>
+                  <span className="text-gray-500"> + GST</span>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    'Responsive website design',
+                    'Home, About & Contact pages',
+                    'Service showcase pages',
+                    'Customer inquiry form',
+                    'Service booking request form',
+                    'Location/branch pages',
+                    'Mobile-friendly layout',
+                    'Basic SEO setup',
+                    '2 rounds of revisions'
+                  ].map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="p-6 bg-gray-50">
+                <p className="text-center text-gray-600 text-sm mb-4">Ideal for: Small businesses starting online</p>
+                <button className="w-full py-3 px-6 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg transition-colors">
+                  Get Started
+                </button>
+              </div>
+            </div>
+
+            {/* Standard Plan */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transform md:scale-105 border-4 border-[#d4a843] relative">
+              <div className="absolute top-0 right-0 bg-[#d4a843] text-[#0f1924] px-4 py-1 text-sm font-bold rounded-bl-lg">
+                POPULAR
+              </div>
+              <div className="bg-gradient-to-r from-[#1e3a5f] to-[#2d5a8a] p-6 text-white text-center">
+                <h3 className="text-2xl font-bold mb-2">Standard</h3>
+                <p className="text-gray-200 text-sm">Website + Booking System</p>
+              </div>
+              <div className="p-8 flex-grow">
+                <div className="text-center mb-8">
+                  <span className="text-5xl font-bold text-[#1e3a5f]">₹75,000</span>
+                  <span className="text-gray-500"> + GST</span>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    'Everything in Basic',
+                    'Free domain & hosting for 1 year',
+                    'Online booking system',
+                    'Customer account portal',
+                    'Booking status tracking',
+                    'Admin dashboard (basic)',
+                    'Email notifications',
+                    'Booking history',
+                    '5 rounds of revisions'
+                  ].map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="p-6 bg-[#d4a843]/10">
+                <p className="text-center text-gray-600 text-sm mb-4">Ideal for: Growing businesses with bookings</p>
+                <button className="w-full py-3 px-6 bg-[#d4a843] hover:bg-[#c49a3d] text-[#0f1924] font-bold rounded-lg transition-colors">
+                  Get Started
+                </button>
+              </div>
+            </div>
+
+            {/* Premium Plan */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div className="bg-gradient-to-r from-[#0f1924] to-[#1e3a5f] p-6 text-white text-center">
+                <h3 className="text-2xl font-bold mb-2">Premium</h3>
+                <p className="text-gray-300 text-sm">Full Solution + Payment Gateway</p>
+              </div>
+              <div className="p-8 flex-grow">
+                <div className="text-center mb-8">
+                  <span className="text-5xl font-bold text-[#1e3a5f]">₹1,50,000</span>
+                  <span className="text-gray-500"> + GST</span>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    'Everything in Standard',
+                    'Custom future ready backend ',
+                    'Payment gateway integration',
+                    'Online payments (UPI)',
+                    'Invoice generation',
+                    'Full admin panel',
+                    'Analytics & tracking',
+                    'SEO optimization',
+                    'Priority support',
+                    'Unlimited revisions'
+                  ].map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700 font-bold">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="p-6 bg-gray-50">
+                <p className="text-center text-gray-600 text-sm mb-4">Ideal for: Enterprise with payment needs</p>
+                <button className="w-full py-3 px-6 bg-[#1e3a5f] hover:bg-[#0f1924] text-white font-semibold rounded-lg transition-colors">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Plan Comparison Table */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h3 className="text-2xl font-bold text-[#1e3a5f] text-center mb-8">Plan Comparison</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b-2 border-gray-200">
+                    <th className="py-4 px-6 text-left text-gray-700 font-bold">Feature</th>
+                    <th className="py-4 px-6 text-center text-gray-600 font-bold">Basic</th>
+                    <th className="py-4 px-6 text-center bg-[#d4a843]/10 text-[#1e3a5f] font-bold">Standard</th>
+                    <th className="py-4 px-6 text-center text-gray-600 font-bold">Premium</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { feature: 'Responsive Design', basic: true, standard: true, premium: true },
+                    { feature: 'Service Pages', basic: true, standard: true, premium: true },
+                    { feature: 'Inquiry Form', basic: true, standard: true, premium: true },
+                    { feature: 'Online Booking', basic: false, standard: true, premium: true },
+                    { feature: 'Customer Portal', basic: false, standard: true, premium: true },
+                    { feature: 'Payment Gateway', basic: false, standard: false, premium: true },
+                    { feature: 'Invoice Generation', basic: false, standard: false, premium: true },
+                    { feature: 'Admin Dashboard', basic: false, standard: true, premium: true },
+                    { feature: 'Analytics & Tracking', basic: false, standard: false, premium: true },
+                    { feature: 'Multi-Branch Ready', basic: false, standard: false, premium: true },
+                    { feature: 'Priority Support', basic: false, standard: false, premium: true },
+                  ].map((row, index) => (
+                    <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                      <td className="py-4 px-6 text-gray-700 border-b border-gray-100">{row.feature}</td>
+                      <td className="py-4 px-6 text-center border-b border-gray-100">
+                        {row.basic ? <span className="text-green-500 text-xl">✓</span> : <span className="text-gray-300 text-xl">—</span>}
+                      </td>
+                      <td className="py-4 px-6 text-center bg-[#d4a843]/5 border-b border-gray-100">
+                        {row.standard ? <span className="text-green-500 text-xl">✓</span> : <span className="text-gray-300 text-xl">—</span>}
+                      </td>
+                      <td className="py-4 px-6 text-center border-b border-gray-100">
+                        {row.premium ? <span className="text-green-500 text-xl">✓</span> : <span className="text-gray-300 text-xl">—</span>}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
 
@@ -557,65 +702,18 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-[#1e3a5f] text-center mb-8">Payment Schedule</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { milestone: '40% advance on project confirmation', amount: '₹68,000 + GST', step: 1 },
-                { milestone: '30% on approval of UI and booking workflow', amount: '₹51,000 + GST', step: 2 },
-                { milestone: '20% on staging completion', amount: '₹34,000 + GST', step: 3 },
-                { milestone: '10% before production launch', amount: '₹17,000 + GST', step: 4 },
+                { milestone: '40% on project confirmation', step: 1 },
+                { milestone: '30% on design approval', step: 2 },
+                { milestone: '20% on staging complete', step: 3 },
+                { milestone: '10% before launch', step: 4 },
               ].map((item, index) => (
-                <div key={index} className="bg-gray-50 rounded-xl p-6 text-center border-2 border-transparent hover:border-[#d4a843] transition-colors">
-                  <div className="w-12 h-12 bg-[#d4a843] rounded-full flex items-center justify-center text-[#0f1924] font-bold text-xl mx-auto mb-4">
+                <div key={index} className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
+                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                     {item.step}
                   </div>
-                  <p className="font-medium text-[#1e3a5f] mb-2">{item.milestone}</p>
-                  <p className="text-[#d4a843] font-bold text-lg">{item.amount}</p>
+                  <p className="font-medium text-[#1e3a5f]">{item.milestone}</p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Optional Services */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold text-[#1e3a5f] text-center mb-8">Optional Services</h3>
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="space-y-4">
-                {[
-                  { service: 'WhatsApp Business API notifications', fee: 'From ₹12,000 setup + provider usage charges' },
-                  { service: 'SMS OTP / transactional SMS', fee: 'From ₹5,000 setup + message charges' },
-                  { service: 'Advanced CRM or ERP integration', fee: 'Quoted after API review' },
-                  { service: 'Ongoing maintenance and support', fee: '₹4,000/month or ₹45,000/year' },
-                  { service: 'SEO and content growth programme', fee: 'Quoted separately based on target cities and keywords' },
-                ].map((item, index) => (
-                  <div key={index} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
-                    <span className="text-gray-700">{item.service}</span>
-                    <span className="font-medium text-[#1e3a5f]">{item.fee}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Commercial Notes */}
-          <div className="bg-[#d4a843]/10 border border-[#d4a843]/30 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-[#1e3a5f] mb-6">Commercial Notes</h3>
-            <ul className="space-y-4">
-              {[
-                'Gateway onboarding, gateway transaction fees, hosting, paid plugins, SMS/WhatsApp usage and third-party subscriptions are excluded unless explicitly listed.',
-                'The estimate includes migration of agreed website content. Large-scale rewriting, photography, video production and bulk historic data cleanup are outside this scope.',
-                'Two consolidated review rounds are included for UI design. Changes to approved workflows may affect cost and schedule.',
-                '30-day post-launch defect warranty is included. New features and content updates are handled under maintenance or change request.'
-              ].map((note, index) => (
-                <li key={index} className="flex items-start">
-                  <svg className="w-5 h-5 text-[#d4a843] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-gray-700">{note}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6 pt-6 border-t border-[#d4a843]/30">
-              <p className="text-[#1e3a5f] font-semibold text-center">
-                Proposal validity: 15 days from issue date.
-              </p>
             </div>
           </div>
         </div>
