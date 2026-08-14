@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
               <p className="text-gray-400 text-sm mb-2">Date</p>
-              <p className="text-white font-medium">13 August 2026</p>
+              <p className="text-white font-medium">14 August 2026</p>
             </div>
           </div>
 
@@ -882,7 +882,7 @@ export default function Home() {
             <p className="text-gray-400 mb-6">Data meets creativity — the APT Digital Express way.</p>
             <div className="border-t border-gray-700 pt-6">
               <p className="text-sm text-gray-500">
-                StorageWala Website Redesign & Online Booking Proposal • 13 August 2026
+                StorageWala Website Redesign & Online Booking Proposal • 14 August 2026
               </p>
             </div>
           </div>
